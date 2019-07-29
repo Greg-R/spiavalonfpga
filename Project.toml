@@ -1,0 +1,9 @@
+name = "spiavalonfpga"
+uuid = "4bd8dbea-aca1-4de2-ab99-f4bb2ad4819b"
+authors = ["Greg-R <soapy-smith@comcast.net>"]
+version = "0.1.0"
+
+[deps]
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
