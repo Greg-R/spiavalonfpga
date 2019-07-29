@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="500"
+   viewBox="0 0 264.58334 132.29167"
+   version="1.1"
+   id="svg4633"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="asic_fpga_micro.svg">
+  <defs
+     id="defs4627" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.019"
+     inkscape:cx="500"
+     inkscape:cy="250"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="2560"
+     inkscape:window-height="1352"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4635"
+       spacingx="2.6458334"
+       spacingy="2.6458334" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4630">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70834)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.42491829;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4637"
+       width="68.791664"
+       height="66.145836"
+       x="13.229172"
+       y="177.9375" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.41666663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4637-9"
+       width="66.145821"
+       height="66.145836"
+       x="100.54167"
+       y="177.9375" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.41666663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4637-9-3"
+       width="66.145821"
+       height="66.145836"
+       x="185.20836"
+       y="177.9375" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="33.496853"
+       y="214.46022"
+       id="text4690"><tspan
+         sodipodi:role="line"
+         id="tspan4688"
+         x="33.496853"
+         y="214.46022"
+         style="stroke-width:0.26458332">ASIC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="118.7506"
+       y="214.16669"
+       id="text4694"><tspan
+         sodipodi:role="line"
+         id="tspan4692"
+         x="118.7506"
+         y="214.16669"
+         style="stroke-width:0.26458332">FPGA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="111.125"
+       y="265.25"
+       id="text4698"><tspan
+         sodipodi:role="line"
+         id="tspan4696"
+         x="111.125"
+         y="274.61377"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="217.78435"
+       y="207.82664"
+       id="text4702"><tspan
+         sodipodi:role="line"
+         id="tspan4700"
+         x="217.78435"
+         y="207.82664"
+         style="font-size:7.76111126px;text-align:center;text-anchor:middle;stroke-width:0.26458332">MICRO-</tspan><tspan
+         sodipodi:role="line"
+         x="217.78435"
+         y="221.0558"
+         style="font-size:7.76111126px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4704">CONTROLLER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="13.229166"
+       y="257.3125"
+       id="text918"><tspan
+         sodipodi:role="line"
+         id="tspan916"
+         x="13.229166"
+         y="263.55502"
+         style="stroke-width:0.26458332;font-size:4.93888889px;" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="13.229166"
+       y="254.66667"
+       id="text922"><tspan
+         sodipodi:role="line"
+         id="tspan920"
+         x="13.229166"
+         y="260.90918"
+         style="stroke-width:0.26458332;font-size:4.93888889px;" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.229166"
+       y="254.66667"
+       id="text926"><tspan
+         sodipodi:role="line"
+         id="tspan924"
+         x="13.229166"
+         y="254.66667"
+         style="stroke-width:0.26458332">LOWEST COST (HIGH VOLUME)</tspan><tspan
+         sodipodi:role="line"
+         x="13.229166"
+         y="260.84027"
+         style="stroke-width:0.26458332"
+         id="tspan928">HIGHEST SPEED</tspan><tspan
+         sodipodi:role="line"
+         x="13.229166"
+         y="267.01389"
+         style="stroke-width:0.26458332"
+         id="tspan930">LOWEST POWER</tspan><tspan
+         sodipodi:role="line"
+         x="13.229166"
+         y="273.1875"
+         style="stroke-width:0.26458332"
+         id="tspan932">SINGLE PURPOSE, INFLEXIBLE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="100.54166"
+       y="252.02084"
+       id="text936"><tspan
+         sodipodi:role="line"
+         id="tspan934"
+         x="100.54166"
+         y="252.02084"
+         style="stroke-width:0.26458332">EXPENSIVE</tspan><tspan
+         sodipodi:role="line"
+         x="100.54166"
+         y="258.19446"
+         style="stroke-width:0.26458332"
+         id="tspan938">FAST, MULTI-TASKING</tspan><tspan
+         sodipodi:role="line"
+         x="100.54166"
+         y="264.36807"
+         style="stroke-width:0.26458332"
+         id="tspan940">MODERATE POWER</tspan><tspan
+         sodipodi:role="line"
+         x="100.54166"
+         y="270.54169"
+         style="stroke-width:0.26458332"
+         id="tspan942">LOW-RISK DEVELOPMENT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="185.20833"
+       y="252.02084"
+       id="text946"><tspan
+         sodipodi:role="line"
+         id="tspan944"
+         x="185.20833"
+         y="252.02084"
+         style="stroke-width:0.26458332">LOW COST (HIGH VOLUME)</tspan><tspan
+         sodipodi:role="line"
+         x="185.20833"
+         y="258.19446"
+         style="stroke-width:0.26458332"
+         id="tspan948">SOFTWARE, OS</tspan><tspan
+         sodipodi:role="line"
+         x="185.20833"
+         y="264.36807"
+         style="stroke-width:0.26458332"
+         id="tspan950">MODERATE POWER</tspan><tspan
+         sodipodi:role="line"
+         x="185.20833"
+         y="270.54169"
+         style="stroke-width:0.26458332"
+         id="tspan952">GENERAL PURPOSE COMPUTE</tspan><tspan
+         sodipodi:role="line"
+         x="185.20833"
+         y="276.71527"
+         style="stroke-width:0.26458332"
+         id="tspan954">VIRTUAL MULTI-TASKING</tspan><tspan
+         sodipodi:role="line"
+         x="185.20833"
+         y="282.88889"
+         style="stroke-width:0.26458332"
+         id="tspan956">SLOWEST FOR SPECIFIC TASK</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+\section{Introduction}
+%\pagenumbering{gobble}
+
+This is the ``Golden Age'' of SBCs (Single Board Computers).
+Walk into your favorite brick-and-mortar bookstore (not many remain), 
+and check out the magazine shelf.  You will find several magazines, or ``book-a-zines''
+dedicated to ``Arduino'' or ``Raspberry Pi''.  
+
+Or look in the magazine ''Make'', or use their ``Makers’ Guide to Boards'':
+
+\url{https://makezine.com/comparison/boards/}
+
+Using the above webpage, you can select a ``Type'' of board from three categories:
+
+\begin{itemize}
+	\item Microcontroller
+	\item Single Board Computer
+	\item FPGA
+\end{itemize}
+
+While there are dozens of boards listed, there are only three shown for ``FPGA''.
+This list is not entirely accurate, as more FPGA boards exist, however, it gives
+an idea of the relative scarcity of FPGA boards.
+
+There are a ton of resources online, and dozens of books and magazines on SBCs which you can find at the local bookstore.
+The ARRL store sells quite of few SBC themed books as well.  Do a search for FPGA.  Nothing!
+
+I think it is fair to say that FPGA technology has not made it very far into the ranks of hobbyists.
+Amateur radio operators have certainly been pioneers in this, with numerous ``Software Defined Radio''
+projects going back to the era when the devices were really expensive.  FPGA is an amazing technology, a sort of ``3D printer of digital electronics''.  Perhaps there are other applications of FPGA within the amateur radio community in addition to SDR?
+
+I wanted to experiment with this FPGA stuff! The current crop of devices and boards has lowered the cost of entry.  This is my story of a first project in FPGA.  Hopefully some of the perceived barriers can be lowered, and other hams can be encouraged to try working with this fascinating technology.
+
+\section{Where to Start}
+
+I am already familiar with the most common ``Single Board Computers'', the Arduino, the BeagleBone, and the Raspberry Pi.
+It a good thing to have some experience developing with a SBC before attempting to tackle FPGA.  I have a couple of BeagleBone
+projects which are in use at my home on a daily basis.  Very practical!
+
+One of the ways I went up the learning curve on SBCs was this lecture series by Bruce Land of Cornell University:
+
+\url{https://www.youtube.com/watch?v=FYy6JN0vpg0&list=PLKcjQ_UFkrd4z2qoFuJ1jtVhCSuxxCTpk}
+
+This course uses a PIC32 SBC.  However, the material in the lectures is generic enough to apply to any SBC.
+Even better, a second course covers FPGA!
+
+\url{https://www.youtube.com/playlist?list=PLKcjQ_UFkrd7UcOVMm39A6VdMbWWq-e_c}
+
+and the matching website:
+
+\url{http://people.ece.cornell.edu/land/courses/ece5760/}
+
+This material gave me a pretty good idea of what was involved in FPGA work.
+I didn't use the same development board as used in this course, however, I used
+another Intel FPGA based board.  So the development tools and general flow of working
+with the FPGA are similar.
+
+You will need to use a variety of resources to answer questions and solve problems as you go up the FPGA learning curve.
+Nothing about this is super difficult.  It seemed to me that most of the effort is in handling large quantity of details.
+You will need to spend a lot of hours absorbing this stuff.  I think that FPGAs are at least a little bit harder than SBCs.
+
+\section{Most Significant Source of Learning: Intel}
+
+You will need to get an account at your FPGA vendor's website.  I used an Intel based board, and the account was free.
+On the Intel site, you will have access to large amounts of learning resources for FPGA.
+Be prepared to spend many hours watching videos and studying documentation, whatever vendor you have chosen.
+Intel has good material, and you can learn a lot!  A recommended starting point is the video series ``Become an FPGA Designer in 4 Hours''.
+The 4 hours part is perhaps a bit optimistic, but it is good material:
+
+https://www.intel.com/content/www/us/en/programmable/support/training/course/odswbecome.html
+
+\section{Other Resources for Going Up the Learning Curve}
+
+You will need to go up the learning curve on Verilog (or VHDL).
+Here are a couple of inexpensive books (< \$20) which will get you going:
+
+\url{https://www.amazon.com/gp/product/1075968437/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1}
+
+\url{http://www.lulu.com/shop/george-self/exploring-digital-logic/paperback/product-22747579.html}
+
+\section{Github Repository for this Project}
+
+The documentation and code for this project is located in this git repository:
+
+\url{https://github.com/Greg-R/rotorcommand1}
