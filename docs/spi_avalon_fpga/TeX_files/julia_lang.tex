@@ -7,14 +7,15 @@ The github project from which mine was derived uses a programming language calle
 This was a language I had heard about, but I've never tried it.
 To duplicate the original project, I had to install the language and run the program.
 The program does the processing of the GIF image, and then sends the data to the FPGA
-via the JTAG server.
+via the JTAG server and USB-to-JTAG interface.
 
 It was simple to install the server and run the Julia program.  It all worked first time!
+Later, I installed the Atom IDE which has a Julia plug-in.  It's great!
 
 Rather than reinventing the wheel, I decided to use the image processing portion of the Julia program.
-However, how to interface to the FTDI SPI device?
+However, how to drive the FTDI SPI device?  I needed something to replace the JTAG server.
 
-The FTDI device is supported with a C shared library.  This library has the initialization, read, write, and shutdown
+The FTDI USB-to-SPI device is supported with a C shared library.  This library has the initialization, read, write, and shutdown
 command necessary to work with the device.
 
 Fortuitously, the Julia language includes the capability to call C library functions in a very direct way!
@@ -25,6 +26,13 @@ When I say ``command line'', in the case of Julia I am referring to the ``Read E
 It is a new language, and has a few quirks like all of them do, but so far I am very impressed!
 
 At first, Julia was also used to access a shared library which was taken from an Altera demo project of the SPI-Avalon bus master.
-This library was responsible for reading and writing ``Avalon Packets''.  This is the protocol used by the Avalon bus.  I was able to successfully translate the Altera library to Julia.  This is working well and is able to read and write to the SPI and thus the Avalon bus.
+This library was responsible for reading and writing ``Avalon Packets''.  This is the protocol used by the Avalon bus.  I was able to successfully translate the Altera library to Julia.  This is working well and the system is able to read and write to the SPI and thus the FPGA Avalon bus, the parallel ports, and the SDRAM.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/project_system}
+	\centering\bfseries
+	\caption{Project System:  Desktop -> USB-to-SPI -> FPGA -> VGA Monitor}
+\end{figure}
 
 The Julia code is located in the ``julia'' directory of the github repository linked in the introduction.

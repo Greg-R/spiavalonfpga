@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  30 JUL 2019 07:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  30 JUL 2019 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -747,15 +747,16 @@ l.70
 h the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 
-      [3]
-Overfull \hbox (7.00987pt too wide) in paragraph at lines 36--37
+l.23 T
+      he reason for choosing the Elbert V2 was the book ``Programming FPGAs"...
+[3]
+Overfull \hbox (7.00987pt too wide) in paragraph at lines 34--35
 [][][]$\T1/cmtt/m/n/12 https : / / www . terasic . com . tw / cgi-[]bin / page 
 / archive . pl ? Language = English & CategoryNo = 165 &
  []
 
 
-Overfull \hbox (7.00987pt too wide) in paragraph at lines 44--45
+Overfull \hbox (7.00987pt too wide) in paragraph at lines 42--43
 [][][]$\T1/cmtt/m/n/12 https : / / www . terasic . com . tw / cgi-[]bin / page 
 / archive . pl ? Language = English & CategoryNo = 234 &
  []
@@ -764,110 +765,126 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 A
+l.46 A
        good feature of this board is the Arduino compatible expansion header...
 [4]) (./TeX_files/ftdi_julia.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 23.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 T
-      o do justice to this there should be an entire section on ``Platform D...
+l.30 I
+      n our case, we are given a whole bunch of IP for free that we can expe...
 [5]
-<images/platform_designer.pdf, id=88, 1133.73563pt x 749.80125pt>
+<images/platform_designer.pdf, id=87, 1133.73563pt x 749.80125pt>
 File: images/platform_designer.pdf Graphic file (type pdf)
 <use images/platform_designer.pdf>
-Package pdftex.def Info: images/platform_designer.pdf  used on input line 37.
+Package pdftex.def Info: images/platform_designer.pdf  used on input line 38.
 (pdftex.def)             Requested size: 505.89pt x 334.57007pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 	\item A
-             udio and Video [6pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.1}) has been already used, duplicate ignored
+l.51 \end{itemize}
+                   [6pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 	\item A
-             udio and Video <./images/platform_designer.pdf>]
-<images/play_gif.png, id=100, 1065.9825pt x 323.2075pt>
+l.51 \end{itemize}
+                   <./images/platform_designer.pdf>]
+<images/play_gif.png, id=99, 1065.9825pt x 323.2075pt>
 File: images/play_gif.png Graphic file (type png)
 <use images/play_gif.png>
-Package pdftex.def Info: images/play_gif.png  used on input line 85.
+Package pdftex.def Info: images/play_gif.png  used on input line 86.
 (pdftex.def)             Requested size: 505.89pt x 153.38707pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 \begin{quotation}
-                       [7pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.2}) has been already used, duplicate ignored
+l.94 
+      [7pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.94 \begin{quotation}
-                       <./images/play_gif.png>]
-<images/spi_avalon_system.pdf, id=112, 752.8125pt x 225.84375pt>
+l.94 
+      <./images/play_gif.png>]
+<images/spi_avalon_system.pdf, id=111, 752.8125pt x 225.84375pt>
 File: images/spi_avalon_system.pdf Graphic file (type pdf)
 <use images/spi_avalon_system.pdf>
-Package pdftex.def Info: images/spi_avalon_system.pdf  used on input line 113.
+Package pdftex.def Info: images/spi_avalon_system.pdf  used on input line 114.
 (pdftex.def)             Requested size: 505.89pt x 151.77284pt.
-<images/ftdi.jpg, id=113, 1003.75pt x 1003.75pt>
+<images/ftdi.jpg, id=112, 1003.75pt x 1003.75pt>
 File: images/ftdi.jpg Graphic file (type jpg)
 <use images/ftdi.jpg>
-Package pdftex.def Info: images/ftdi.jpg  used on input line 124.
-(pdftex.def)             Requested size: 177.06458pt x 177.05263pt.
+Package pdftex.def Info: images/ftdi.jpg  used on input line 125.
+(pdftex.def)             Requested size: 151.76854pt x 151.76596pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134     \item T
+l.135     \item T
                  he ``Synopsys Design Constraints'' (.sdc) file was updated ...
 [8pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.134     \item T
+l.135     \item T
                  he ``Synopsys Design Constraints'' (.sdc) file was updated ...
  <./images/spi_avalon_system.pdf>]
-<images/de10_spi.JPG, id=139, 240.9pt x 174.6525pt>
+<images/de10_spi.JPG, id=138, 240.9pt x 174.6525pt>
 File: images/de10_spi.JPG Graphic file (type jpg)
 <use images/de10_spi.JPG>
-Package pdftex.def Info: images/de10_spi.JPG  used on input line 141.
+Package pdftex.def Info: images/de10_spi.JPG  used on input line 142.
 (pdftex.def)             Requested size: 252.94499pt x 183.39053pt.
+) (./TeX_files/julia_lang.texpdfTeX warning (ext4): destination with the same i
+dentifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 
+      [9pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.11 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.11 
+      <./images/ftdi.jpg> <./images/de10_spi.JPG>]
+<images/project_system.pdf, id=145, 534.49687pt x 240.9pt>
+File: images/project_system.pdf Graphic file (type pdf)
+<use images/project_system.pdf>
+Package pdftex.def Info: images/project_system.pdf  used on input line 32.
+(pdftex.def)             Requested size: 354.12144pt x 159.61201pt.
 ) (./TeX_files/books.texpdfTeX warning (ext4): destination with the same identi
 fier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.8 A
       very practical introduction to digital hardware using the early histor...
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.8 A
       very practical introduction to digital hardware using the early histor...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.8 A
-      very practical introduction to digital hardware using the early histor...
- <./images/ftdi.jpg> <./images/de10_spi.JPG>]
+ <./images/project_system.pdf>]
 Overfull \hbox (8.50987pt too wide) in paragraph at lines 27--28
 [][][]$\T1/cmtt/m/n/12 https : / / www . amazon . com / Programming-[]FPGAs-[]G
 etting-[]Started-[]Verilog / dp / 125964376X / ref =
@@ -886,54 +903,38 @@ loring-[]digital-[]logic / paperback / product-[]22747579 .
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 \end{document}
-                    [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
+l.42 \end{document}
+                    [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 841770FE82384606914B8972ECE15485;762
-(rerunfilecheck)             After:  E697857C6E3D786DC640E5EE722BB812;696.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E90733AF11EDE0FE17D20061BDA84963;775.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 6380 strings out of 494880
- 92028 string characters out of 6179600
+ 6387 strings out of 494880
+ 92231 string characters out of 6179600
  174364 words of memory out of 5000000
- 9559 multiletter control sequences out of 15000+600000
+ 9563 multiletter control sequences out of 15000+600000
  61572 words of font info for 95 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 28i,8n,28p,734b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.9.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.9.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.9} has been referenced but does not exist, 
-replaced by a fixed one
-
- </home/raven/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk
->{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb>
-Output written on main.pdf (10 pages, 722805 bytes).
+ 28i,8n,28p,730b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/raven/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600
+pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb>
+Output written on main.pdf (11 pages, 737488 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

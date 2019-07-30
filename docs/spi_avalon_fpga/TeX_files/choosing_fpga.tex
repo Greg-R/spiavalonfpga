@@ -1,7 +1,5 @@
 \section{Choosing a Development Board}
 
-This was a not a straightforward process!
-
 The first FPGA development board I purchased was the Numato Lab ``Elbert V2'' (\$29.95)
 This board has the Xilinx XC3S50A Spartan 3A FPGA device containing 1584 logic cells and
 54 KB RAM.  The board has a nice selection of peripherals which can be driven
@@ -20,16 +18,16 @@ by the FPGA:
 	\item 39 IOs
 \end{itemize}
 
-Note that the USB capability of this board is for Flash programming only.  It is not an interface to the FPGA.
+Note that the USB capability of this board is for Flash programming only.  It is not a general purpose interface to the FPGA.
 
 The reason for choosing the Elbert V2 was the book ``Programming FPGAs" by Simon Monk.  The book features the Elbert, along with the ``Mojo'' and ``Papilio'' boards.
 
-If you have a specific application, then it will be straightforward to decide if the development board meets your requirements.  For a person motivated to learn FPGA without without a specific application in mind should probably choose a board with more peripheral devices than less.  Also note that the example above has 39 IOs, so you can add your own peripherals.  If the IO is in the format of the common Arduino, then adding peripherals may be quite easy to accomplish.
+If you have a specific application, then it will be straightforward to decide if the development board meets your requirements.  For a person motivated to learn FPGA without without a specific application in mind should choose a board with more peripheral devices than less.  Also note that the example above has 39 IOs, which allows for additional peripherals to be installed.  If the IO pins are in the format used by Arduino, the addition of peripherals will be easy to accomplish.
 
 I was able to install the development software for the Elbert and work through a few of the projects in the book.
-However, I found the development tools lacking in one area.  I was interested in using a more modern version of Verilog, called ``SystemVerilog''.  So that was a bit of a problem, and a search for another board began.
+However, I found the development tools lacking in one area.  I was interested in using a more modern version of Verilog, called ``SystemVerilog''.  The development tools for the Elbert V2 do not support that, so more searching was required.
 
-My motivation for SystemVerilog was to try some of the new features added, including those used for ``testbenches'' (simulation).  That is only an expression of my particular interest, as the Verilog used in the Xilinx tool for this device is fine and can be used for maximum benefit with this device.  This does, however, indicate that the development environment which mates up with the FPGA device is as important as the device itself.  So before you choose a board, be sure to download and install the development tools first.  Look at the documentation and decide if you will be comfortable with that particular development tool capabilities.
+My motivation for SystemVerilog was to try some of the new features, including those used for ``testbenches'' (simulation).  That is only an expression of my particular interest, as the Verilog used in the Xilinx tool for this device is fine and can be used for maximum benefit with this device.  This does, however, indicate that the development environment which mates up with the FPGA device is as important as the device itself.  So before you choose a board, be sure to download and install the development tools first.  Look at the documentation and decide if you will be comfortable with that particular development tool capabilities.
 
 Looking around a bit more, I found this board after viewing Bruce Land's great lecture series on youtube:
 
@@ -37,13 +35,13 @@ Looking around a bit more, I found this board after viewing Bruce Land's great l
 
 The DE1-SOC is used in Cornell's ``ECE 5760 Advanced Microcontroller Design and system-on-chip'' course.
 
-The board requires the "Quartus" development tool, which met my requirement for SystemVerilog.  However, this FPGA on this board well beyond a beginner!  This board uses an advanced ''System On Chip'' (SOC) which is a combination of microcontroller (dual-core ARM Cortex A9) and FPGA in a single device.  Price is \$249, which seemed a little steep for a project which might not work out.  The added complexity of the ARM processors, having to deal with an unfamiliar distribution of Linux running on the ARM processors, and the all of the extra work involved seemed like too much.  Indeed this board is immensely capable, so maybe I will come back to this one in the future!
+The board requires the "Quartus" development tool, which met my requirement for SystemVerilog.  However, the FPGA on this board is well beyond a beginner!  This board uses an advanced ''System On Chip'' (SOC) which is a combination of microcontroller (dual-core ARM Cortex A9) and FPGA in a single device.  Price is \$249, which seemed a little steep for a project which might not work out.  The added complexity of the ARM processors, having to deal with an unfamiliar distribution of Linux running on the ARM processors, and the all of the extra work involved seemed like too much.  Indeed this board is immensely capable, so maybe I will come back to it in the future!
 
-Fortunately the same company, Terasic, makes boards which are less complex (and less expensive).  Perusing their site, I found this board, the DE10-Lite (\$85):
+Fortunately the same company, Terasic, makes boards with less complex FPGAs (and less expensive).  Perusing their site, I found this board, the DE10-Lite (\$85):
 
 \url{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021}
 
-This looked like a good choice, and I purchased it.  Later when doing internet searches, I found there are plenty of example projects already available for this board.  It seems to be at least moderately popular in the academic world, and some courses have been based on this board.  The MAX10 FPGA is widely supported, although it is not included in the latest version of the Quartus development tool (latest version supported 2018).
+This looked like a good choice, and I purchased it.  Later when doing internet searches, I found there are plenty of example projects already available for this board.  It seems to be at moderately popular in the academic world, and some courses have been based on this board.  The MAX10 FPGA is well supported, although it is not included in the latest version of the Quartus development tool (latest version supported 2018).
 
 A good feature of this board is the Arduino compatible expansion header.  In general, the DE10-Lite has been easy to work with, and seems to be robust.  I've been using it for many months and it is still alive!
 

@@ -1,4 +1,4 @@
-\section{FTDI SPI Interface and Julia Programming Language}
+\section{A Project Inspiration and JTAG to FTDI SPI Interface}
 
 The inspiration for this project came from a a search at github.com on DE10-Lite:
 
@@ -11,13 +11,14 @@ What really got my attention is the project play\_gif:
 
 The interesting feature of this project is the usage of the USB to load data (animated GIF image file)
 to the FPGA.  So this is a data pipeline from a Linux desktop to the FPGA which is built into the board!
+This met my requirement that I be able to control the FPGA remotely from a desktop (or SBC) computer.
 
-But it is a bit clunky to use!  The interface is via ``JTAG'', which is typically used as a debugging interface.  It is not specifically intended for mass data transfer, but in this case it was pressed into service.
+The interface is via ``JTAG'', which is typically used as a debugging interface.  It is not specifically intended for mass data transfer, but in this case it was pressed into service.
 
-It also requires a ``TCL Server'', and a running instance of the Quartus development tool!  Not exactly what I was looking for, but I got the demo to work easily!
+The interface is a bit clunky to use.  It requires a ``TCL Server'', and a running instance of the Quartus development tool!  Not exactly what I was looking for, but I got the demo to work easily!  It is very nicely done work demonstrating several features of FPGA technology.
 
-What it does is conceptually simple.  The FPGA part of the project implements a VGA\footnote{VGA is a relatively simple video standard which seems to be common on many FPGA development boards.} interface to the connector on the DE10-Lite board.  The image loaded from the desktop computer is sliced into its constituent ``frames''.
-Another interesting aspect of the project is the interface to the SDRAM of the DE10-Lite which is a 64MB external part on the board.  The sliced-up image is loaded into the SDRAM, and then another control module pages the VGA output through the memory.  Thus you see the animated GIF displayed on the monitor.  Really you are seeing in a very direct manner the data loaded into the SDRAM!
+The way it works is conceptually simple.  The FPGA part of the project implements a VGA\footnote{VGA is a relatively simple video standard which seems to be common on many FPGA development boards.} interface to the connector on the DE10-Lite board.  The image loaded from the desktop computer is sliced into its constituent ``frames''.
+Another interesting aspect of the project is the interface to the SDRAM of the DE10-Lite which is a 64MB external part on the board.  The sliced-up image is loaded into the SDRAM, and then another control module pages the VGA output through the memory.  Thus you see the animated GIF displayed on the monitor.  Really you are seeing in a very direct manner the data loaded into the SDRAM.  Cool!
 
 \subsection{IP and Platform Designer}
 
@@ -84,7 +85,7 @@ Here is what the system looks like:
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/play_gif.png}
 	\centering\bfseries
-	\caption{Play\_gif System Diagram}
+	\caption{Play\_gif JTAG Interface System Diagram}
 \end{figure}
 
 What this diagram does not show is the requirement for a running Quartus and a TCL/JTAG server program.
@@ -104,7 +105,7 @@ It is an internal bus standard used to connect Avalon bus masters and slaves.  S
 
 This project is interesting, and shows a path to communication between a desktop computer and the FPGA.
 However, the JTAG + Quartus + TCL/JTAG Server is cumbersome.  A SPI to Avalon bus IP component is listed in the catalog.
-What if the JTAG and stuff could be replaced by something simpler?
+What if the JTAG and stuff could be replaced by something simpler like a SPI bus?
 
 So that is what evolved into my ``introductory FPGA project''.  The revised system diagram:
 
@@ -121,7 +122,7 @@ External to the DE10-Lite board, there is a new USB to SPI adapter board.  This 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.35\textwidth]{images/ftdi.jpg}
+	\includegraphics[width=0.3\textwidth]{images/ftdi.jpg}
 	\centering\bfseries
 	\caption{FTDI FT232H USB to SPI Break-out Board}
 \end{figure}
@@ -143,7 +144,7 @@ Here is the crazy breadboard hook-up:
 	\caption{DE10-Lite Connected to FTDI SPI Breakout}
 \end{figure}
 
-In spite of the length of the breadboard jumper wires, the SPI interface performed remarkably well right up to the FTDI limit of 30 MHz.
+In spite of the length of the breadboard jumper wires, the SPI interface performed remarkably well right up to the FTDI clock limit of 30 MHz.
 
 
 
