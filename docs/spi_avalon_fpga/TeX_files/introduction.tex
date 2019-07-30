@@ -4,7 +4,7 @@
 This is the ``Golden Age'' of SBCs (Single Board Computers).
 Walk into your favorite brick-and-mortar bookstore (not many remain), 
 and check out the magazine shelf.  You will find several magazines, or ``book-a-zines''
-dedicated to ``Arduino'' or ``Raspberry Pi''.  
+dedicated to ``Arduino'' or ``Raspberry Pi''.  On the bookshelves you find a few books, maybe even one for BeagleBone.
 
 Or look in the magazine ''Make'', or use their ``Makers’ Guide to Boards'':
 
@@ -29,13 +29,23 @@ I think it is fair to say that FPGA technology has not made it very far into the
 Amateur radio operators have certainly been pioneers in this, with numerous ``Software Defined Radio''
 projects going back to the era when the devices were really expensive.  FPGA is an amazing technology, a sort of ``3D printer of digital electronics''.  Perhaps there are other applications of FPGA within the amateur radio community in addition to SDR?
 
-I wanted to experiment with this FPGA stuff! The current crop of devices and boards has lowered the cost of entry.  This is my story of a first project in FPGA.  Hopefully some of the perceived barriers can be lowered, and other hams can be encouraged to try working with this fascinating technology.
+I wanted to experiment with this FPGA stuff! The current crop of devices and boards has lowered the cost of entry.  This is my story of a first project in FPGA.  Hopefully it can be shown that FPGA projects are possible, and other hams can be encouraged to try working with this fascinating technology.
+
+\section{Why?}
+
+Why work with FPGAs?  Aren't SBCs good enough?
+
+I like to think of FPGAs as a sort of ``3D printer for electronics''.  A loose analogy yes, but the point is you can create new digital circuits at will.  It is HARDWARE not software!  This gives you the power to create multiple specifically targeted digital machines which can work essentially independently of one another.  This gives the prospect of doing DSP mathematics very efficiently and handling data flow simultaneously (the attraction for SDR).  A list of potential applications from Wikipedia:
+
+\url{https://en.wikipedia.org/wiki/Field-programmable_gate_array#Common_applications}
+
+FPGAs will almost certainly be used in combination with conventional ``hard'' computing devices (like your laptop or Raspberry Pi).  Think of an FPGA as an capability you can add to an SBC to expand its capabilities into high-efficiency computing and the real-time domain.
 
 \section{Where to Start}
 
-I am already familiar with the most common ``Single Board Computers'', the Arduino, the BeagleBone, and the Raspberry Pi.
+When I began my FPGA quest, I was already familiar with the most common ``Single Board Computers'', the Arduino, the BeagleBone, and the Raspberry Pi.
 It a good thing to have some experience developing with a SBC before attempting to tackle FPGA.  I have a couple of BeagleBone
-projects which are in use at my home on a daily basis.  Very practical!
+projects which are in use at my home on a daily basis.  Many of the skills learned working with SBCs will apply to FPGAs.
 
 One of the ways I went up the learning curve on SBCs was this lecture series by Bruce Land of Cornell University:
 
@@ -51,35 +61,28 @@ and the matching website:
 \url{http://people.ece.cornell.edu/land/courses/ece5760/}
 
 This material gave me a pretty good idea of what was involved in FPGA work.
-I didn't use the same development board as used in this course, however, I used
+I didn't use the same development board as used in this course, but I did use
 another Intel FPGA based board.  So the development tools and general flow of working
 with the FPGA are similar.
 
 You will need to use a variety of resources to answer questions and solve problems as you go up the FPGA learning curve.
-Nothing about this is super difficult.  It seemed to me that most of the effort is in handling large quantity of details.
+Nothing about this is super difficult.  It seemed to me that most of the effort is in handling a large quantity of details.
 You will need to spend a lot of hours absorbing this stuff.  I think that FPGAs are at least a little bit harder than SBCs.
 
-\section{Most Significant Source of Learning: Intel}
+\section{Most Significant Source of Learning: Vendor Web Site}
 
 You will need to get an account at your FPGA vendor's website.  I used an Intel based board, and the account was free.
 On the Intel site, you will have access to large amounts of learning resources for FPGA.
 Be prepared to spend many hours watching videos and studying documentation, whatever vendor you have chosen.
 Intel has good material, and you can learn a lot!  A recommended starting point is the video series ``Become an FPGA Designer in 4 Hours''.
-The 4 hours part is perhaps a bit optimistic, but it is good material:
+The 4 hours part is perhaps a bit optimistic, but it will give you a good early acceleration:
 
 https://www.intel.com/content/www/us/en/programmable/support/training/course/odswbecome.html
 
-\section{Other Resources for Going Up the Learning Curve}
 
-You will need to go up the learning curve on Verilog (or VHDL).
-Here are a couple of inexpensive books (< \$20) which will get you going:
-
-\url{https://www.amazon.com/gp/product/1075968437/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1}
-
-\url{http://www.lulu.com/shop/george-self/exploring-digital-logic/paperback/product-22747579.html}
 
 \section{Github Repository for this Project}
 
 The documentation and code for this project is located in this git repository:
 
-\url{https://github.com/Greg-R/rotorcommand1}
+\url{https://github.com/Greg-R/spiavalonfpga}
