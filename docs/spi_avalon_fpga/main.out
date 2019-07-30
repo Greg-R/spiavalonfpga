@@ -1,12 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Why?}{}% 2
 \BOOKMARK [1][-]{section.3}{Where to Start}{}% 3
-\BOOKMARK [1][-]{section.4}{Most Significant Source of Learning: Vendor Web Site}{}% 4
+\BOOKMARK [1][-]{section.4}{A Most Significant Source of Learning: Vendor Web Site}{}% 4
 \BOOKMARK [1][-]{section.5}{Github Repository for this Project}{}% 5
-\BOOKMARK [1][-]{section.6}{Low Cost FPGA Development Boards}{}% 6
-\BOOKMARK [1][-]{section.7}{Choosing a Development Board}{}% 7
-\BOOKMARK [1][-]{section.8}{FTDI SPI Interface and Julia Programming Language}{}% 8
-\BOOKMARK [2][-]{subsection.8.1}{IP and Platform Designer}{section.8}% 9
-\BOOKMARK [1][-]{section.9}{FPGA and Verilog Books}{}% 10
-\BOOKMARK [2][-]{subsection.9.1}{Hobbyist FPGA Books}{section.9}% 11
-\BOOKMARK [2][-]{subsection.9.2}{Verilog}{section.9}% 12
+\BOOKMARK [1][-]{section.6}{Choosing a Development Board}{}% 6
+\BOOKMARK [1][-]{section.7}{FTDI SPI Interface and Julia Programming Language}{}% 7
+\BOOKMARK [2][-]{subsection.7.1}{IP and Platform Designer}{section.7}% 8
+\BOOKMARK [1][-]{section.8}{FPGA and Verilog Books}{}% 9
+\BOOKMARK [2][-]{subsection.8.1}{Hobbyist FPGA Books}{section.8}% 10
+\BOOKMARK [2][-]{subsection.8.2}{Verilog}{section.8}% 11

@@ -1,10 +1,10 @@
 \section{Introduction}
 %\pagenumbering{gobble}
 
-This is the ``Golden Age'' of SBCs (Single Board Computers).
+This is the ``Golden Age'' of SBCs (Single Board Computers) and microcontroller boards.
 Walk into your favorite brick-and-mortar bookstore (not many remain), 
 and check out the magazine shelf.  You will find several magazines, or ``book-a-zines''
-dedicated to ``Arduino'' or ``Raspberry Pi''.  On the bookshelves you find a few books, maybe even one for BeagleBone.
+dedicated to ``Arduino'' or ``Raspberry Pi''.  On the bookshelves you find a few books on Arduino and RPi, maybe even one for BeagleBone.
 
 Or look in the magazine ''Make'', or use their ``Makers’ Guide to Boards'':
 
@@ -19,39 +19,38 @@ Using the above webpage, you can select a ``Type'' of board from three categorie
 \end{itemize}
 
 While there are dozens of boards listed, there are only three shown for ``FPGA''.
-This list is not entirely accurate, as more FPGA boards exist, however, it gives
+This list is not entirely accurate, as more FPGA boards o exist, however, it gives
 an idea of the relative scarcity of FPGA boards.
 
 There are a ton of resources online, and dozens of books and magazines on SBCs which you can find at the local bookstore.
-The ARRL store sells quite of few SBC themed books as well.  Do a search for FPGA.  Nothing!
+The ARRL store sells several SBC themed books as well.  Do a search for FPGA.  Nothing!
 
 I think it is fair to say that FPGA technology has not made it very far into the ranks of hobbyists.
 Amateur radio operators have certainly been pioneers in this, with numerous ``Software Defined Radio''
-projects going back to the era when the devices were really expensive.  FPGA is an amazing technology, a sort of ``3D printer of digital electronics''.  Perhaps there are other applications of FPGA within the amateur radio community in addition to SDR?
+projects going back to the era when the devices were really expensive.  FPGA is an amazing technology, a sort of ``3D printer of digital electronics''.  Perhaps there are other applications of FPGA within the amateur radio community in addition to SDR which can be explored?
 
-I wanted to experiment with this FPGA stuff! The current crop of devices and boards has lowered the cost of entry.  This is my story of a first project in FPGA.  Hopefully it can be shown that FPGA projects are possible, and other hams can be encouraged to try working with this fascinating technology.
+I wanted to experiment with this FPGA stuff! The current crop of devices and boards has lowered the cost of entry.  This is my story of a first project in FPGA.  Hopefully it can be shown that FPGA projects are within reach, and other hams can be encouraged to try working with this fascinating technology.
 
 \section{Why?}
 
 Why work with FPGAs?  Aren't SBCs good enough?
 
-I like to think of FPGAs as a sort of ``3D printer for electronics''.  A loose analogy yes, but the point is you can create new digital circuits at will.  It is HARDWARE not software!  This gives you the power to create multiple specifically targeted digital machines which can work essentially independently of one another.  This gives the prospect of doing DSP mathematics very efficiently and handling data flow simultaneously (the attraction for SDR).  A list of potential applications from Wikipedia:
+I like to think of FPGAs as a sort of ``3D printer for electronics''.  A loose analogy yes, but the point is that FPGAs allow you to create new digital circuits at will.  It is HARDWARE not software!  This gives you the power to create multiple specifically targeted digital machines which can work independently of one another.  This is the capability that SDR uses to crunch DSP math very efficiently while handling data flow simultaneously.  A list of FPGA applications from Wikipedia:
 
 \url{https://en.wikipedia.org/wiki/Field-programmable_gate_array#Common_applications}
 
-FPGAs will almost certainly be used in combination with conventional ``hard'' computing devices (like your laptop or Raspberry Pi).  Think of an FPGA as an capability you can add to an SBC to expand its capabilities into high-efficiency computing and the real-time domain.
+FPGAs will almost certainly be used in combination with conventional ``hard'' computing devices (like your laptop or Raspberry Pi).  Think of an FPGA as a capability you can add to your SBC to expand its capabilities into high-efficiency computing and the real-time domain.
 
 \section{Where to Start}
 
-When I began my FPGA quest, I was already familiar with the most common ``Single Board Computers'', the Arduino, the BeagleBone, and the Raspberry Pi.
-It a good thing to have some experience developing with a SBC before attempting to tackle FPGA.  I have a couple of BeagleBone
-projects which are in use at my home on a daily basis.  Many of the skills learned working with SBCs will apply to FPGAs.
+When I began my FPGA quest, I was already familiar with the most common SBCs and microcontroller boards, the Arduino, the BeagleBone, and the Raspberry Pi.
+It a good thing to have some experience developing with an SBC before attempting to tackle FPGA.  In my case, I spent quite a bit of time developing several projects on the BeagleBone Black SBC.  Many of the skills learned working with SBCs will apply to FPGAs.
 
 One of the ways I went up the learning curve on SBCs was this lecture series by Bruce Land of Cornell University:
 
 \url{https://www.youtube.com/watch?v=FYy6JN0vpg0&list=PLKcjQ_UFkrd4z2qoFuJ1jtVhCSuxxCTpk}
 
-This course uses a PIC32 SBC.  However, the material in the lectures is generic enough to apply to any SBC.
+This course uses a PIC32 microcontroller board.  However, the material in the lectures is generic enough to apply to any board which can be programmed in C.
 Even better, a second course covers FPGA!
 
 \url{https://www.youtube.com/playlist?list=PLKcjQ_UFkrd7UcOVMm39A6VdMbWWq-e_c}
@@ -60,16 +59,16 @@ and the matching website:
 
 \url{http://people.ece.cornell.edu/land/courses/ece5760/}
 
-This material gave me a pretty good idea of what was involved in FPGA work.
+Watching a few of the youtube videos gave me a pretty good idea of what was involved in FPGA work.
 I didn't use the same development board as used in this course, but I did use
 another Intel FPGA based board.  So the development tools and general flow of working
 with the FPGA are similar.
 
 You will need to use a variety of resources to answer questions and solve problems as you go up the FPGA learning curve.
-Nothing about this is super difficult.  It seemed to me that most of the effort is in handling a large quantity of details.
-You will need to spend a lot of hours absorbing this stuff.  I think that FPGAs are at least a little bit harder than SBCs.
+It seemed to me that most of the effort required to learn FPGA is in handling a large quantity of details.
+You will need to spend a lot of hours absorbing this stuff.  I think that FPGAs are at least a little bit harder than working with SBCs.
 
-\section{Most Significant Source of Learning: Vendor Web Site}
+\section{A Most Significant Source of Learning: Vendor Web Site}
 
 You will need to get an account at your FPGA vendor's website.  I used an Intel based board, and the account was free.
 On the Intel site, you will have access to large amounts of learning resources for FPGA.
@@ -78,8 +77,6 @@ Intel has good material, and you can learn a lot!  A recommended starting point 
 The 4 hours part is perhaps a bit optimistic, but it will give you a good early acceleration:
 
 https://www.intel.com/content/www/us/en/programmable/support/training/course/odswbecome.html
-
-
 
 \section{Github Repository for this Project}
 
