@@ -105,7 +105,7 @@ It is an internal bus standard used to connect Avalon bus masters and slaves.  S
 
 This project is interesting, and shows a path to communication between a desktop computer and the FPGA.
 However, the JTAG + Quartus + TCL/JTAG Server is cumbersome.  A SPI to Avalon bus IP component is listed in the catalog.
-What if the JTAG and stuff could be replaced by something simpler like a SPI bus?
+What if the JTAG and development tools could be replaced by something simpler like a SPI bus?
 
 So that is what evolved into my ``introductory FPGA project''.  The revised system diagram:
 
@@ -130,7 +130,7 @@ Other changes required for SPI:
     \item The ``Synopsys Design Constraints'' (.sdc) file was updated to incorporate the SPI bus.
 \end{itemize}
 
-Here is the crazy breadboard hook-up:
+Here is the rapid-prototype breadboard hook-up:
 
 \begin{figure}[h]
 	\centering
