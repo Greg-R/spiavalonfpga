@@ -1,4 +1,4 @@
-\section{A Project Inspiration and JTAG to FTDI SPI Interface}
+\section{A Project Inspiration: JTAG to FTDI SPI Interface}
 
 The inspiration for this project came from a a search at github.com on DE10-Lite:
 
@@ -44,7 +44,7 @@ The upper left corner of the GUI is the library of IP.  Some of the categories:
 
 \begin{itemize}
 	\item Basic Functions
-\item ESP
+\item DSP
 \item Memory Interfaces
 \item Processors and Peripherals (including a ``Nios'' processor)
 \item Memory Interfaces and Controllers
@@ -118,14 +118,9 @@ So that is what evolved into my ``introductory FPGA project''.  The revised syst
 
 The significant change on the FPGA is the swapping of the JTAG Avalon bus master with the SPI-Avalon slave.  This was not entirely a drop-in replacement, as there were changes to reset and clock connections in addition to swapping JTAG to SPI components.  But it is easy, and the swapping can be done in a couple of minutes.
 
-External to the DE10-Lite board, there is a new USB to SPI adapter board.  This board is based on the FT232H chip by FTDI.  This can be bought from eBay for about \$10.  Search for ``ft232 spi'' and you will find several options.  I recommend one with headers to allow it to be plugged into a common breadboard.
+External to the DE10-Lite board, there is a USB to SPI adapter board.  This board is based on the FT232H chip by FTDI.  This can be bought from eBay for about \$10.  Search for ``ft232 spi'' and you will find several options.  I recommend one with headers to allow it to be plugged into a common breadboard.  The FTDI device requires a shared library (libMPSSE) to be installed:
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.3\textwidth]{images/ftdi.jpg}
-	\centering\bfseries
-	\caption{FTDI FT232H USB to SPI Break-out Board}
-\end{figure}
+\url{https://www.ftdichip.com/Support/SoftwareExamples/MPSSE/LibMPSSE-SPI.htm}
 
 Other changes required for SPI:
 

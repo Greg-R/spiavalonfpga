@@ -20,7 +20,7 @@ by the FPGA:
 
 Note that the USB capability of this board is for Flash programming only.  It is not a general purpose interface to the FPGA.
 
-The reason for choosing the Elbert V2 was the book ``Programming FPGAs" by Simon Monk.  The book features the Elbert, along with the ``Mojo'' and ``Papilio'' boards.
+The reason for choosing the Elbert V2 was the book ``Programming FPGAs" by Simon Monk.  The book features the Elbert, along with the ``Mojo'' and ``Papilio'' boards.  This book is one of the very few ``hobbyist'' style books I could find.
 
 If you have a specific application, then it will be straightforward to decide if the development board meets your requirements.  For a person motivated to learn FPGA without without a specific application in mind should choose a board with more peripheral devices than less.  Also note that the example above has 39 IOs, which allows for additional peripherals to be installed.  If the IO pins are in the format used by Arduino, the addition of peripherals will be easy to accomplish.
 
@@ -37,7 +37,7 @@ The DE1-SOC is used in Cornell's ``ECE 5760 Advanced Microcontroller Design and 
 
 The board requires the "Quartus" development tool, which met my requirement for SystemVerilog.  However, the FPGA on this board is well beyond a beginner!  This board uses an advanced ''System On Chip'' (SOC) which is a combination of microcontroller (dual-core ARM Cortex A9) and FPGA in a single device.  Price is \$249, which seemed a little steep for a project which might not work out.  The added complexity of the ARM processors, having to deal with an unfamiliar distribution of Linux running on the ARM processors, and the all of the extra work involved seemed like too much.  Indeed this board is immensely capable, so maybe I will come back to it in the future!
 
-Fortunately the same company, Terasic, makes boards with less complex FPGAs (and less expensive).  Perusing their site, I found this board, the DE10-Lite (\$85):
+Fortunately the same company, Terasic, makes boards with less complex FPGAs (and less expensive).  Searching their site, I found this board, the DE10-Lite (\$85):
 
 \url{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021}
 
