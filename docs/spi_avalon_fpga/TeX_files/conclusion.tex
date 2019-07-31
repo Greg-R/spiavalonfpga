@@ -1,0 +1,23 @@
+\section{Simulation}
+
+The FPGA developer should develop skills in FPGA simulation.  The original ``blinky LED'' project I attempted prior to the SPI bus project required me to do that.
+I had a minor, but persistent bug which brought my work to a halt.  Trial and error with the board and re-doing the FPGA got me nowhere fast.  After I had a simple simulation running, the problem was quickly resolved.
+Fortunately the Quartus tool does most of the work to set up the simulation.  A small bit of hacking of ``do'' (TCL) files is required.
+
+I recommend using the resources on the Intel web site to explore the basics of setting up and running simulations via Quartus.
+
+\section{Conclusion}
+
+I was able to find an FPGA development board and ``starter project'' that met my requirements for a beginning in FPGA development.
+A bare minimum of Verilog modifications were required to make the project function correctly.
+
+Most of the FPGA ``design'' was done using the system-level ``Platform Designer'' tool.
+
+I was able to add memory-mapped read of the SDRAM and FPGA registers via analysis of the Avalon bus structure.  The Julia programming
+language was used to create and decode Avalon bus transactions.  Direct access of the SPI device C shared library from Julia code was used.
+
+The next stage of the project will be a practical ham radio application.  I have an antenna rotator which I want to control via wireless.
+I think it will be possible to create a real-time state machine on the FPGA which will handle the motor drive along with a Hall sensor
+and counter for positional feedback.  Driving the FPGA from the SPI port of an SBC, along with a WIFI connection, should allow the entire
+control unit to be wireless.  Solar powered?  Maybe.
+
