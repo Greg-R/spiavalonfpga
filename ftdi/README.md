@@ -1,5 +1,5 @@
-Instructions for automating FTDI USB-SPI Device Operations
-----------------------------------------------------------
+Instructions for Automating FTDI USB-SPI Device Operations
+==========================================================
 
 These instructions were developed using Ubuntu 18.04.
 Other distributions may have different requirements.
