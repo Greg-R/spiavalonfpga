@@ -16,6 +16,8 @@ while still in package mode:
 
 add Images
 
+add ImageMagick
+
 add ProgressMeter
 
 add Printf
