@@ -13,7 +13,6 @@ There are two separate problems:
 boot, when the USB plug is unpluggled and plugged back in.
 
 ## Problem 1
----------
 
 There are probably many ways to solve the boot problem.
 This method uses a simple systemd service.
@@ -30,7 +29,6 @@ That is all that is required.  Now on the next boot, the
 interferring kernel modules will be removed.
 
 ## Problem 2
----------
 
 If there is an error in the Julia program, the FTDI device
 will not be closed and it will hang up.  The easiest way
