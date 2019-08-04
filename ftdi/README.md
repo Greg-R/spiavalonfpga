@@ -12,7 +12,7 @@ There are two separate problems:
 2.  Dealing with the kernel modules after
 boot, when the USB plug is unpluggled and plugged back in.
 
-Problem 1
+## Problem 1
 ---------
 
 There are probably many ways to solve the boot problem.
@@ -29,7 +29,7 @@ sudo systemctl enable rmmod_ftdi.service
 That is all that is required.  Now on the next boot, the
 interferring kernel modules will be removed.
 
-Problem 2
+## Problem 2
 ---------
 
 If there is an error in the Julia program, the FTDI device
