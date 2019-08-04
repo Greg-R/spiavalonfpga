@@ -15,13 +15,20 @@ If you are running this project for the first time, run these commands
 while still in package mode:
 
 add Images
+
 add ProgressMeter
+
 add Printf
 
 The above commands make take a few minutes to complete.
 
 To exit package mode, use the Backspace key.
-You will now be at the Julia REPL.
+You will now be at the Julia REPL.  Use this command:
+
+using spiavalonfpga
+
+to load the functions from the Julia module.
+
 If the FPGA is powered and the FTDI USB-SPI is plugged into the
 computer, you can "send" the animated GIF image to the FPGA with
 this command:
