@@ -14,22 +14,6 @@ boot, when the USB plug is unpluggled and plugged back in.
 
 ## Problem 1
 
-There are probably many ways to solve the boot problem.
-This method uses a simple systemd service.
-
-Copy the file rmmod_ftdi.service to this directory:
-
-/etc/systemd/system/multi-user.target.wants
-
-Now enable the service with this command:
-
-sudo systemctl enable rmmod_ftdi.service
-
-That is all that is required.  Now on the next boot, the
-interferring kernel modules will be removed.
-
-## Problem 2
-
 If there is an error in the Julia program, the FTDI device
 will not be closed and it will hang up.  The easiest way
 to fix this is to unplug-plug the device.
@@ -42,5 +26,29 @@ to the directory:
 
 /etc/udev/rules.d
 
+Make the shell script executable:
+
+chmod u+x /etc/udev/rules.d/rm_ftdi_modules.sh
+
 The shell script rm_ftdi_modules.sh will be run automatically
 whenever the FTDI USB device is unplugged-plugged.
+
+## Problem 2
+
+There are probably many ways to solve the boot problem.
+This method uses a simple systemd service.
+
+Copy the file rmmod_ftdi.service to this directory:
+
+/lib/systemd/system
+
+Start the service (in the above directory):
+
+sudo systemctl start rmmod_ftdi
+
+Now enable the service at boot with this command:
+
+sudo systemctl enable rmmod_ftdi.service
+
+That is all that is required.  On the next boot, the
+interferring kernel modules will be removed.
