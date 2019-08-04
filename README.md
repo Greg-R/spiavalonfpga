@@ -1,6 +1,5 @@
 SPI AVALON FPGA
----------------
----------------
+===============
 
 An FPGA project based on the Terasic DE10-Lite MAX10 Development board.
 The project uses an FTDI FT232H USB to SPI device to create a bi-directional
