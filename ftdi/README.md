@@ -42,10 +42,6 @@ Copy the file rmmod_ftdi.service to this directory:
 
 /lib/systemd/system
 
-Start the service (in the above directory):
-
-sudo systemctl start rmmod_ftdi
-
 Now enable the service at boot with this command:
 
 sudo systemctl enable rmmod_ftdi.service
