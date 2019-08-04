@@ -7,6 +7,9 @@ interface to the FPGA from a desktop computer.
 
 Everything was developed using a desktop computer running Ubuntu 18.04.
 
+Here is a quick video demo:
+https://www.youtube.com/watch?v=nU17ankv5hU&feature=youtu.be
+
 doc/spi_avalon_fpga directory includes the PDF documentation file.
 src has the Julia code.
 fpga has a Quartus archive file for the MAX10 FPGA.
