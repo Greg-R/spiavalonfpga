@@ -1,0 +1,10 @@
+[Unit]
+Description=Remove the kernel modules ftdi_sio and usbserial at boot.
+
+[Service]
+ExecStart=/sbin/rmmod ftdi_sio usbserial
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
