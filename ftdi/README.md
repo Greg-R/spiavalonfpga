@@ -3,6 +3,9 @@ Instructions for automating FTDI USB-SPI Device Operations
 
 These instructions were developed using Ubuntu 18.04.
 Other distributions may have different requirements.
+This describes the problem with the ftdi_sio and usbserial
+kernel modules which interfere with the MPSSE library functions.
+These two kernel modules must be removed for the MPSSE to function.
 
 There are two separate problems:
 1.  One is dealing with the kernel modules at boot.
