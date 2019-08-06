@@ -5,20 +5,14 @@ module spiavalonfpga
 #  KF5N
 
 include("SPIManager.jl")
-#include("AvalonPackets.jl")
 
-export send  #, setspeed, setcount, load
-export pack, flatten
+export send
 
 # For opening and working with images
 using Images
 using Printf
 
-# Communicating with the device.
-#using JTAGManager
-#export JTAG
-
-# For progress information
+# For progress information on the command line
 using ProgressMeter
 
 # Address of the max_frame_count register.
@@ -37,18 +31,16 @@ function send(image::String)  # image is a string path.
     img = load(image)
 
     # Configure frame count register.
-    #  This writes the number of frames in the GIF.
+    #  This writes the number of frames in the GIF -1 (zero based).
     gif_frames = zeros(UInt8,1)  #  view will not take array size of 1.
     gif_frames[1] = size(img, 3) - 1
-    println("The number of frames in the GIF is $gif_frames")
+    Printf.@printf("The number of frames in the GIF is %d\n", gif_frames[1] + 1)
     SPIManager.write(imagecount_reg_address(), gif_frames)
 
     @info "Packing Image"
     # By default, use 4 bits per color and 16 bits per pixel.
     data = pack(flatten(img), 4, 16)
-    # datas_type = typeof(data)
 
-    # println("typeof(data) = $datas_type")
     @info "Sending Image"
     #  write function for SPI:
     #  write(address, data)

@@ -104,7 +104,7 @@ function write(
 
     # Compute the number of transfers
     #  This should be the number of individual frames in the animated GIF.
-    bytes_per_transfer = 64000  #  Actual will be higher than this due to Avalon packet overhead.
+    bytes_per_transfer = 62000  #  Actual will be higher than this due to Avalon packet overhead.
     data_length = length(data)
     ntransfers = ceil(Int, data_length / bytes_per_transfer)
     println("The number ntransfers = $ntransfers")
