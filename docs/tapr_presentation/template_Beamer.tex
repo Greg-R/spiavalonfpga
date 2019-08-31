@@ -255,6 +255,8 @@ development tool!
 	\caption{Play\_gif JTAG Interface System Diagram}
 \end{figure}
 
+Not shown is a running instance of Quartus and TCL/JTAG server required to make this system function.
+
 \end{frame}
 
 \begin{frame}
@@ -280,6 +282,36 @@ In our case, we are given a whole bunch of IP for free that we can experiment wi
 	\centering\bfseries
 	\caption{Play\_gif JTAG Interface System Diagram}
 \end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{IP and Platform Designer}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{graphics/spi_avalon_system}
+	\centering\bfseries
+	\caption{Play\_gif with SPI System Diagram}
+\end{figure}
+
+Replacing the JTAG with a SPI interface.  Drop in the included SPI IP!
+
+\end{frame}
+
+\begin{frame}
+\frametitle{DE10-Lite + FTDI USB to SPI}
+
+Here is the rapid-prototype breadboard hook-up:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{graphics/de10_spi}
+	\centering\bfseries
+	\caption{DE10-Lite Connected to FTDI SPI Breakout}
+\end{figure}
+
+In spite of the length of the breadboard jumper wires, the SPI interface performed remarkably well right up to the FTDI clock limit of 30 MHz.
 
 \end{frame}
 
