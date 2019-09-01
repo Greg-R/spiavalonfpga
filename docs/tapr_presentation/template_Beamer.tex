@@ -1,9 +1,10 @@
 \documentclass{beamer}
-
+\usepackage{charter}
 \usepackage{default}
 \usetheme{Madrid}
 \usepackage{parskip}
 \usepackage{hyperref}
+%\usepackage{mathptmx}
 
 %Information to be included in the title page:
 \title{An FPGA Learning Experience: SPI Interface to Max10 FPGA}
@@ -300,6 +301,17 @@ Replacing the JTAG with a SPI interface.  Drop in the included SPI IP!
 \end{frame}
 
 \begin{frame}
+\frametitle{FTDI USB to SPI Adapter}
+
+The significant change on the FPGA is the swapping of the JTAG Avalon bus master with the SPI-Avalon slave.  This was not entirely a drop-in replacement, as there were changes to reset and clock connections in addition to swapping JTAG to SPI components.  But it is easy, and the swapping can be done in a couple of minutes.
+
+External to the DE10-Lite board, there is a USB to SPI adapter board.  This board is based on the FT232H chip by FTDI.  This can be bought from eBay for about \$10.  Search for ``ft232 spi'' and you will find several options.  I recommend one with headers to allow it to be plugged into a common breadboard.  The FTDI device requires a C shared library (libMPSSE) to be installed:
+
+\url{https://www.ftdichip.com/Support/SoftwareExamples/MPSSE/LibMPSSE-SPI.htm}
+
+\end{frame}
+
+\begin{frame}
 \frametitle{DE10-Lite + FTDI USB to SPI}
 
 Here is the rapid-prototype breadboard hook-up:
@@ -312,6 +324,68 @@ Here is the rapid-prototype breadboard hook-up:
 \end{figure}
 
 In spite of the length of the breadboard jumper wires, the SPI interface performed remarkably well right up to the FTDI clock limit of 30 MHz.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{SPI Driver in Julia Programming Language}
+
+The github project from which mine was derived uses a programming language called ``Julia'' in the JTAG server and for image data processing:
+
+\url{https://julialang.org/}
+
+Rather than reinventing the wheel, I decided to use the image processing portion of the Julia program.
+However, how to drive the FTDI SPI device?  I needed something to replace the JTAG server.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{SPI Driver in Julia Programming Language}
+
+The FTDI USB-to-SPI device is supported with a C shared library.  This library has the initialization, read, write, and shutdown
+command necessary to work with the device.
+
+Fortuitously, the Julia language includes the capability to call C library functions in a very direct way!
+I was skeptical at first, but I quickly had the SPI device's initialization function running and returning with no error.
+The other required functions were quickly added.  I now had full control of the SPI bus from the command line!
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Project System Diagram}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{graphics/project_system}
+	\centering\bfseries
+	\caption{Project System: Desktop -$>$ USB-to-SPI $<$-$>$ FPGA -$>$ VGA Monitor}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Notes on Verilog/SystemVerilog}
+
+A good book which costs \$20 at Amazon:
+
+You will need to go up the learning curve on Verilog (or VHDL).
+Here are a couple of inexpensive books (\$20) which will get you going:
+
+``Designing Digital Systems with SystemVerilog''
+Brent E. Nelson, Brigham Young University
+
+\begin{tiny}
+	\url{https://www.amazon.com/gp/product/1075968437/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1}
+\end{tiny}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Notes on Verilog/SystemVerilog}
+
+The most important thing to understand about Verilog/SystemVerilog from the Nelson book:
+
+``You must remember that when designing using an HDL (Hardware Description Language), you are not writing a computer program which will be compiled and then executed sequentially like C or Java.  Rather, you are describing a set of hardware building blocks and their interconnections.''
 
 \end{frame}
 
