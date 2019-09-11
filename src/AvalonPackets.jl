@@ -30,7 +30,7 @@ RESPONSE_LENGTH = 4
 #  This function simply attaches an Avalon packet header to the data.
 function do_transaction(type, size, address, data)
 
-    if ((type == SEQUENTIAL_WRITE) | (type == NON_SEQUENTIAL_WRITE))
+    if ((type == SEQUENTIAL_WRITE) | (type == NON_SEQUENTIAL_WRITE) | (type == SEQUENTIAL_READ) | (type == NON_SEQUENTIAL_READ))
       transaction = zeros(UInt8, (size + HEADER_LENGTH))
 #transaction = Array{UInt8,1}(UndefInitializer(), size + HEADER_LENGTH)
     end
@@ -46,6 +46,7 @@ function do_transaction(type, size, address, data)
     transaction[8] = (address & 0xff)
 
     #  Load the data into the transaction:
+    if((type == SEQUENTIAL_WRITE) | (type == NON_SEQUENTIAL_WRITE))
     for i in 9:(size + HEADER_LENGTH)
         transaction[i] = data[i - HEADER_LENGTH]
     end
@@ -55,9 +56,9 @@ function do_transaction(type, size, address, data)
 
 end # do_transaction
 
-#  Complete the Transmit packet.  Pass in an the result from do_transaction.
+#  Complete the Transmit packet.  Pass in the result from do_transaction.
 #  The address is already included in the data's header.
-#  This function will insert the special characeters.
+#  This function will insert the special characters.
 function tx_packet(data, data_length)
 #  Response data is a fixed value of 2 bytes to form a 16 bit unsigned integer,
 #  which is the number of bytes transmitted or received.  This is the data

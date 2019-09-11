@@ -109,7 +109,6 @@ function groupbits!(target, buffer)
     end
 end
 
-# Include the single-byte read function.
-include("spi_read.jl")
+
 
 end # module
