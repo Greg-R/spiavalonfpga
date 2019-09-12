@@ -50,6 +50,8 @@ function do_transaction(type, size, address, data)
     for i in 9:(size + HEADER_LENGTH)
         transaction[i] = data[i - HEADER_LENGTH]
     end
+end
+
 
     length = size + 8
     return transaction, length
