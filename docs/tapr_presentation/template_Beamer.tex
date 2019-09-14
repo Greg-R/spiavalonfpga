@@ -37,10 +37,10 @@
 	My early introduction to "digital" was via Arduino, and later Beaglebone and Raspberry Pi.
 	The so-called "Single Board Computer" or ``SBC''.
 	
-	I spent a couple of years working with SBCs.  This was greatly accelerated when I got my hands on ``Exploring Beaglebone, Tools and Techniques for Building with Embedded Linux''.  Great book!
+	I spent a couple of years working with SBCs.  This was greatly accelerated when I got my hands on ``Exploring Beaglebone, Tools and Techniques for Building with Embedded Linux'' by Derek Molloy.  Great book!
 	
 	Looking back, I think TAPR St Petersburg 2016 was essentially an SBC-themed conference!
-	Obviously there is a huge opportunity for SBC in Amateur Radio.
+	Obviously there is a huge opportunity for application of SBC in Amateur Radio.
 	
 \end{frame}
 
@@ -49,7 +49,7 @@
 
 
 \begin{itemize}
-	\item Digital Hardware experience (but not that much!)
+\item Digital Hardware experience (but not that much!)
 \item Work with SBCs for a while.  Finish some projects.
 \item C or similar programming.  You did this working with SBCs?
 \item Discretionary time to expend.  FPGA is not rocket science, but it is time consuming!
@@ -92,7 +92,12 @@ There is a little bit of good news!  Will return to this topic later ...
 
 Boiling it down to fundamental capabilities:
 
-INSERT ASIC FPGA SOC diagram here.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{graphics/asic_fpga_micro}
+	\centering\bfseries
+	\caption{Digital Hardware in Silicon Comparison}
+\end{figure}
 
 
 \end{frame}
@@ -150,6 +155,20 @@ I didn't get much out of the above.  They didn't really follow through to a prac
 So far my experience with FPGA MOOCs is underwhelming.
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Better than MOOCs:  Your Friendly FPGA Device Supplier}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{graphics/fpga_designer_in_4hours.png}
+	\centering\bfseries
+	\caption{Intel "Become and FPGA Designer in 4 Hours"}
+\end{figure}
+
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Choosing a Development Board}
@@ -386,6 +405,65 @@ Brent E. Nelson, Brigham Young University
 The most important thing to understand about Verilog/SystemVerilog from the Nelson book:
 
 ``You must remember that when designing using an HDL (Hardware Description Language), you are not writing a computer program which will be compiled and then executed sequentially like C or Java.  Rather, you are describing a set of hardware building blocks and their interconnections.''
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The New Wave of FPGA: Sipeed}
+
+\begin{tiny}
+\url{https://www.seeedstudio.com/Sipeed-TANG-PriMER-FPGA-Development-Board-p-2881.html}
+\end{tiny}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{graphics/sispeed_tang_fpga.png}
+	\centering\bfseries
+	\caption{Sipeed Tang Primer FPGA Development Board}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The New Wave of FPGA: Arduino Vidor}
+
+\url{https://store.arduino.cc/usa/mkr-vidor-4000}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{graphics/arduino_vidor.png}
+	\centering\bfseries
+	\caption{Arduino Vidor:  Intel Cyclone 10CL016 + Microchip SAMD21 (32 bit ARM Cortex M0+)}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The New Wave of FPGA: TinyFPGA}
+
+\url{https://www.adafruit.com/product/4038}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{graphics/tinyfpga.png}
+	\centering\bfseries
+	\caption{TinyFPGA: Lattice ICE40 FPGA. Supported by open-source tools!}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Github Repositories}
+
+Github repositories for my FPGA projects:
+
+Conference paper and slides in this one:
+\url{https://github.com/Greg-R/spiavalonfpga}
+
+My rotator control project:
+\url{https://github.com/Greg-R/rotorcommand1}
 
 \end{frame}
 
