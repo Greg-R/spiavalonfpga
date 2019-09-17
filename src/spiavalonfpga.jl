@@ -1,9 +1,13 @@
+
+
+
 module spiavalonfpga
 
 #  Derived from spiavagif4 July 22, 2019.
 #  By Gregory Raven, Plantation Florida
 #  KF5N
 
+#include("command_line.jl")
 include("SPIManager.jl")
 
 export send

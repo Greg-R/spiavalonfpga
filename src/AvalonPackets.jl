@@ -2,7 +2,7 @@ module AvalonPackets
 
 #  This module has functions to create and manipulate Avalon Packets.
 
-export do_transaction, tx_packet
+export do_transaction, tx_packet, get_readback_data
 export SEQUENTIAL_WRITE, analyze_response
 
 using Printf
@@ -244,6 +244,18 @@ while i < 12
 # Printf.@printf("Number of bytes written = %d\n", bytes_written)
 
  return bytes_written
+end
+
+function get_readback_data(avalon_packet)
+    read_data = 0x00
+    i = 1
+    for i in 1:12
+        if avalon_packet[i] == EOP
+            read_data = avalon_packet[i+1]
+            break
+        end
+    end
+    return read_data
 end
 
 end # module

@@ -12,8 +12,8 @@ function readbyte(
     SPI_GetNumChannels()
     thisHandle = SPI_InitChannel()
 
-    avalonbuffer2 = zeros(UInt8, 65536)
-    readbuffer = zeros(UInt8, 65536)
+    avalonbuffer2 = zeros(UInt8, 128)
+    readbuffer = zeros(UInt8, 128)
     #  Alternate ways of creating arrays.
     #    readbuffer = Vector{UInt8}(undef, 66000)
     #    readbuffer = Base.Libc.malloc(166000)
@@ -38,10 +38,10 @@ function readbyte(
         send_data, send_data_length = AvalonPackets.tx_packet(header, header_and_datalength)
         avalonbuffer, buffersize = AvalonPackets.byte_to_core(send_data, send_data_length)
 
-        for i in 1:buffersize
+#        for i in 1:buffersize
           #println("avalonbuffer[$i] = $avalonbuffer[i]")
-          Printf.@printf("avalonbuffer[%d] = %x\n", i, avalonbuffer[i])
-        end
+#          Printf.@printf("avalonbuffer[%d] = %x\n", i, avalonbuffer[i])
+#        end
 
 #  Write the data to the FTDI SPI device and thus to the FPGA:
 spiwrite = spi_readwrite(thisHandle, readbuffer, avalonbuffer, buffersize)
@@ -54,14 +54,21 @@ spiwrite = spi_readwrite(thisHandle, readbuffer, avalonbuffer, buffersize)
 response_packet = AvalonPackets.clean_response(readbuffer[(buffersize-12):buffersize])
 #  This function returns a 16 bit unsigned integer, which should be the number of bytes written.
 response_data = AvalonPackets.get_response_data(response_packet)
-
+#println("Response data = $response_data")
 #for i in 1:length(response_packet)
 #Printf.@printf("response_packet[%d] = %x\n", i, response_packet[i])
 #end
 
-for i in 1:50
-Printf.@printf("readbuffer[%d] = %x\n", i, readbuffer[i])
-end
+#for i in 1:23
+#Printf.@printf("readbuffer[%d] = %x\n", i, readbuffer[i])
+#end
+
+#for i in 1:12
+#Printf.@printf("response_packet[%d] = %x\n", i, response_packet[i])
+#end
+
+read_data = AvalonPackets.get_readback_data(response_packet)
+#Printf.@printf("Returned data = %x\n", read_data)
 
 #    for k in (buffersize - 12):buffersize
 #            Printf.@printf("readbuffer[%d] = %x\n", k, readbuffer[k])
@@ -71,4 +78,5 @@ end
 
 #println("Transfer data length = $transfer_data_length")
 SPI_CloseChannel(thisHandle)
+return read_data
 end

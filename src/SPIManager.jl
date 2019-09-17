@@ -229,7 +229,7 @@ function writeLEDs(
         println("buffersize = $buffersize")
 SPI_CloseChannel(thisHandle)
 end
- 
+
 include("spi_read_avalon.jl")
 
 end # module
