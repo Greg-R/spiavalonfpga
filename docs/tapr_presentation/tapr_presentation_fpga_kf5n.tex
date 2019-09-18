@@ -39,8 +39,12 @@
 	
 	I spent a couple of years working with SBCs.  This was greatly accelerated when I got my hands on ``Exploring Beaglebone, Tools and Techniques for Building with Embedded Linux'' by Derek Molloy.  Great book!
 	
-	Looking back, I think TAPR St Petersburg 2016 was essentially an SBC-themed conference!
-	Obviously there is a huge opportunity for application of SBC in Amateur Radio.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.75\textwidth]{graphics/beaglebone.png}
+		\centering\bfseries
+		\caption{``Exploring Beaglebone'' by Derek Molloy}
+	\end{figure}
 	
 \end{frame}
 
@@ -84,21 +88,6 @@ What is out there to work with?
 Currently, most FPGA are ``development boards'' intended for industrial or academic applications.
 
 There is a little bit of good news!  Will return to this topic later ...
-
-\end{frame}
-
-\begin{frame}
-\frametitle{FPGAs in the Silicon Ecosystem}
-
-Boiling it down to fundamental capabilities:
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1.0\textwidth]{graphics/asic_fpga_micro}
-	\centering\bfseries
-	\caption{Digital Hardware in Silicon Comparison}
-\end{figure}
-
 
 \end{frame}
 
@@ -283,8 +272,6 @@ FPGA Jargon:  ``Intellectual Property'' or ``IP''
 
 Due to the way integrated circuits are manufactured, blocks of ''IP'' can be added to the silicon and be expected to perform to the IP owner's specifications.  Typically IP can be included as part of a design kit, or it can be paid for with a license fee.
 
-IP is good because it can reduce engineering design effort, improve performance, and enhance quality.  The trade-off is license fee cost, and you don't necessarily get exactly what you want.
-
 In our case, we are given a whole bunch of IP for free that we can experiment with!  This is bundled into ``Platform Designer'' which is a tool-within-a-tool in the Quartus design suite.
 
 \end{frame}
@@ -347,7 +334,12 @@ In spite of the length of the breadboard jumper wires, the SPI interface perform
 
 The github project from which mine was derived uses a programming language called ``Julia'' in the JTAG server and for image data processing:
 
-\url{https://julialang.org/}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.30\textwidth]{graphics/logo}
+	\centering\bfseries
+	\caption{\url{https://julialang.org/}}
+\end{figure}
 
 Rather than reinventing the wheel, I decided to use the image processing portion of the Julia program.
 However, how to drive the FTDI SPI device?  I needed something to replace the JTAG server.
@@ -383,16 +375,18 @@ The other required functions were quickly added.  I now had full control of the 
 
 A good book which costs \$20 at Amazon:
 
-You will need to go up the learning curve on Verilog (or VHDL).
-Here are a couple of inexpensive books (\$20) which will get you going:
+You will need to go up the learning curve on Hardware Description Language.
+Here an inexpensive book (\$20) which will get you going:
 
 ``Designing Digital Systems with SystemVerilog''
 Brent E. Nelson, Brigham Young University
 
-\begin{tiny}
-	\url{https://www.amazon.com/gp/product/1075968437/ref=ppx_yo_dt_b_asin_title_o00_s03?ie=UTF8&psc=1}
-\end{tiny}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.60\textwidth]{graphics/systemverilog.png}
+	\centering\bfseries
+	\caption{``Designing Digital Systems with SystemVerilog'' by Brent Nelson}
+\end{figure}
 \end{frame}
 
 \begin{frame}
@@ -460,6 +454,20 @@ Conference paper and slides in this one:
 
 My rotator control project:
 \url{https://github.com/Greg-R/rotorcommand1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{FPGAs in the Silicon Ecosystem}
+
+Boiling it down to fundamental capabilities:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{graphics/asic_fpga_micro}
+	\centering\bfseries
+	\caption{Digital Hardware in Silicon Comparison}
+\end{figure}
 
 \end{frame}
 
